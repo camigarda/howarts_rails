@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personajes de Harry Potter</title>
+  
+</head>
+<body>
+  <h1>Personajes de Harry Potter</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Locación</th>
+        <th>Casa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @characters.each do |character| %>
+        <tr>
+          <td><%= character.name %></td>
+          <td><%= character.location %></td>
+          <td><%= character.house %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+
+</body>
+</html>
